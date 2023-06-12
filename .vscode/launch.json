@@ -40,6 +40,16 @@
     },
     {
       "type": "node",
+      "name": "Debug PR service",
+      "request": "launch",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["nx", "serve", "amplication-git-pull-request-service"],
+      "cwd": "${workspaceRoot}",
+      "outputCapture": "std",
+      "env": {}
+    },
+    {
+      "type": "node",
       "name": "Attach Amplication Server",
       "request": "attach",
       "sourceMaps": true,
@@ -51,6 +61,15 @@
       "request": "attach",
       "sourceMaps": true,
       "port": 7001
+    },
+    {
+      "type": "node",
+      "name": "Debug PR service",
+      "request": "launch",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["nx", "serve", "amplication-git-pull-request-service"],
+      "cwd": "${workspaceRoot}",
+      "outputCapture": "std"
     }
   ]
 }
